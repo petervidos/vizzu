@@ -158,8 +158,10 @@ return g('<table class="{0}">{1}</table>',[b,a])}return e}function c(e){var t=e.
 
 				highlight: {
 					escapeHTML: false
-				}
+				},
 				keyboard: {
+    13: 'next', // go to the next slide when the ENTER key is pressed
+    27: function() {}, // do something custom when ESC is pressed
     37: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
   }
 			});
